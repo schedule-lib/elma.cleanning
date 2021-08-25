@@ -1,4 +1,50 @@
 .headerContainer {
   height: var(--header-height);
   background: var(--header-background);
+
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  > nav {
+    max-width: var(--limit-width);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    ul {
+      display: flex;
+
+      li {
+        text-align: center;
+        padding: 0 0.8rem;
+
+        a {
+          position: relative;
+          transition: color 0.2s;
+
+          color: var(--link);
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  font: 700 1.31rem "Poppins", sans-serif;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

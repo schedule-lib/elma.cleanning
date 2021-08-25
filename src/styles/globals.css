@@ -12,11 +12,14 @@ body,
 }
 
 :root {
+  --limit-width: 1200px;
+
   --header-height: 7.5rem;
   --header-background: #fafafa;
 
   --primary-ground: #ffffff;
   --text-color: #413f3f;
+  --link: #4059ce;
 }
 
 *,

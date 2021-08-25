@@ -6,22 +6,22 @@ function Header() {
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <a className="logotipo" href="#">
+        <a className={styles.logo} href="#">
           Elma Cleanning
         </a>
 
         <div className="menu">
           <ul>
             <li>
-              <a href="#home">Início</a>
+              <a href="#contact">+1 003003003003</a>
             </li>
             <li>
-              <a href="#about">Sobre</a>
+              <a href="mailto:elma.cleanning@gmail.com">
+                email.contact@gmail.com
+              </a>
             </li>
           </ul>
         </div>
-        <div></div>
-        <div></div>
       </nav>
     </header>
   );
