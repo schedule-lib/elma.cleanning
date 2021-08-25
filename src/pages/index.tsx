@@ -11,7 +11,99 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.mainContainer}></main>
+      <main className={styles.mainContainer}>
+        <section className={styles.initialSection}>
+          <div>
+            <div>
+              <h1>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting.
+              </h1>
+              <p>
+                Here at Arelli, we’re changing the cleaning game with no term
+                contracts, stop-and-go service, and fully customized cleaning
+                packages.
+              </p>
+              <button type="button">learn more</button>
+            </div>
+
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1610276173132-c47d148ab626?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="initial styles"
+              />
+            </article>
+          </div>
+        </section>
+
+        <section className={styles.aboutSection}>
+          <div>
+            <h2>About us</h2>
+            <h3>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages.
+            </h3>
+          </div>
+          <hr />
+        </section>
+
+        <section className={styles.servicesGroup}>
+          <div>
+            <div className="service">
+              <header>
+                <div>
+                  <img src="" alt="commercial photo" />
+                </div>
+                <div>
+                  <strong>commercial</strong>
+                </div>
+              </header>
+              <div>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+            <div className="service">
+              <header>
+                <div>
+                  <img src="" alt="commercial photo" />
+                </div>
+                <div>
+                  <strong>commercial</strong>
+                </div>
+              </header>
+              <div>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+            <div className="service">
+              <header>
+                <div>
+                  <img src="" alt="commercial photo" />
+                </div>
+                <div>
+                  <strong>commercial</strong>
+                </div>
+              </header>
+              <div>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }

@@ -13,13 +13,22 @@ body,
 
 :root {
   --limit-width: 1200px;
+  --hue: 400;
 
   --header-height: 7.5rem;
   --header-background: #fafafa;
 
   --primary-ground: #ffffff;
+  --secondary-ground: #f8f8f8;
   --text-color: #413f3f;
   --link: #4059ce;
+  --link-disfoque: #526bda;
+
+  --divider: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
 }
 
 *,
@@ -63,4 +72,9 @@ ul li {
 img {
   width: 100%;
   height: auto;
+}
+
+.divider-1 {
+  height: 1px;
+  background: var(--divider);
 }
