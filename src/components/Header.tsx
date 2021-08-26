@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 import styles from "../styles/components/Header.module.scss";
 
@@ -6,9 +6,7 @@ function Header() {
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <a className={styles.logo} href="#">
-          Elma Cleanning
-        </a>
+        <Link href="/">Elma Cleanning</Link>
 
         <div className="menu">
           <ul>

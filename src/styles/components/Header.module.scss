@@ -23,6 +23,16 @@
 
     width: 100%;
 
+    // = = = = = = LOGO = = = = = =
+    > a {
+      font: 700 1.31rem "Poppins", sans-serif;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    // = = = = = = Ítems = = = = = =
     ul {
       display: flex;
 
@@ -38,13 +48,5 @@
         }
       }
     }
-  }
-}
-
-.logo {
-  font: 700 1.31rem "Poppins", sans-serif;
-
-  &:hover {
-    text-decoration: none;
   }
 }
