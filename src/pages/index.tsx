@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.mainContainer}>
-        <section className={styles.initialSection}>
+        <section id="welcome" className={styles.initialSection}>
           <div>
             <div>
               <h1>
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.aboutSection}>
+        <section id="about" className={styles.aboutSection}>
           <div>
             <h2>About us</h2>
             <h3>
@@ -51,7 +51,7 @@ export default function Home() {
           <hr />
         </section>
 
-        <section className={styles.servicesGroup}>
+        <section id="service-group" className={styles.servicesGroup}>
           <div>
             <div className="service">
               <header>

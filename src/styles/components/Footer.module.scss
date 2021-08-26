@@ -71,7 +71,7 @@
           font-size: 16px;
           font-weight: 700;
           line-height: 36px;
-          color: var(--secondary-white);
+          color: #c5c2c2;
         }
         li {
           display: flex;
@@ -81,6 +81,10 @@
             font-weight: 400;
             line-height: 36px;
             padding: 0;
+            color: #999999;
+          }
+          p {
+            max-width: 187px;
           }
         }
       }
@@ -138,7 +142,7 @@
       }
     }
 
-    > button {
+    > a {
       display: flex;
       align-items: center;
       justify-content: center;
