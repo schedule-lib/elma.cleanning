@@ -18,6 +18,13 @@ body,
   --header-height: 7.5rem;
   --header-background: #fafafa;
 
+  --primary-dark: #121212;
+  --secondary-dark: #212335;
+  --scrollbar: #4d4d57;
+  --dominate: #f6f8fa;
+  --dominating: #9eaac2;
+  --shape-hover: #29292e;
+
   --primary-ground: #ffffff;
   --secondary-ground: #f8f8f8;
   --text-color: #413f3f;

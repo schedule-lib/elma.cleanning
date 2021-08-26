@@ -1,0 +1,160 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background: var(--primary-dark);
+  color: var(--whiter);
+
+  padding: 0 2rem;
+
+  transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 120px;
+    position: absolute;
+    background: var(--scrollbar);
+  }
+}
+
+.footerContainer {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  > div.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 80px 0;
+
+    > div.left {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        width: 256px;
+        height: auto;
+        margin-bottom: 50px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-left: 1rem;
+      }
+    }
+
+    > nav {
+      margin: unset;
+
+      display: flex;
+      justify-content: space-between;
+      grid-template-columns: unset;
+
+      width: 100%;
+      max-width: 639px;
+
+      ul {
+        span {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 36px;
+          color: var(--secondary-white);
+        }
+        li {
+          display: flex;
+
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 36px;
+            padding: 0;
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 478px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 935px) {
+      padding: 64px 0;
+      flex-direction: column;
+
+      > nav {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  > div.bottom {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div.socialContainer {
+      display: grid;
+      grid-gap: 8px;
+      gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 1rem;
+        width: 56px;
+        height: 43px;
+
+        transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+          background: var(--secondary-dark);
+        }
+      }
+
+      svg {
+        transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    > button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 40px;
+      width: 50px;
+      border-radius: 7px;
+      border: 0;
+
+      transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+      background: var(--scrollbar);
+      color: var(--dominate);
+
+      &:hover {
+        background: var(--shape-hover);
+      }
+    }
+  }
+}
