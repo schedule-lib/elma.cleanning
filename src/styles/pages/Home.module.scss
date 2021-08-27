@@ -23,9 +23,7 @@
         max-width: 500px;
         text-align: unset;
 
-        transition-property: opacity, transform;
-        transition-delay: 0.2s;
-        transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: var(--global-transition);
       }
       p {
         max-width: 400px;
@@ -33,8 +31,41 @@
         color: #413f3f;
       }
 
+      > div {
+        display: flex;
+
+        > a {
+          background: transparent;
+          text-decoration: none;
+          color: var(--text-color);
+
+          display: inline-flex;
+          align-items: center;
+
+          font: 500 1rem "Roboto", sans-serif;
+          height: 3.2rem;
+          width: 12rem;
+          padding: 0 2rem;
+          margin-top: 2rem;
+          margin-left: 1rem;
+          border-radius: 0.25rem;
+          border: 2px solid var(--text-color);
+
+          transition: all 0.3s;
+
+          svg {
+            margin-left: 0.5rem;
+          }
+
+          &:hover {
+            border-color: var(--link-desfoque);
+            color: var(--link);
+          }
+        }
+      }
+
       button {
-        background-color: var(--link);
+        background: var(--link);
         color: var(--primary-ground);
 
         display: inline-flex;
@@ -50,13 +81,36 @@
         transition: background 0.3s;
 
         &:hover {
-          background: var(--link-disfoque);
+          background: var(--link);
         }
       }
     }
 
     > article {
       flex: 1;
+    }
+  }
+
+  .imageStylus {
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 1;
+      border-radius: 2rem;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 26rem;
+      position: absolute;
+      border-radius: 50%;
+      right: -3rem;
+      z-index: 0;
+      transition: all 0.3s ease;
+
+      animation: simple-animation 0.8s ease forwards;
     }
   }
 }
@@ -97,9 +151,10 @@
     width: 100%;
     margin: 0 auto;
     // = = = = = Service Box = = = = = =
-    > div {
+    > a {
       display: flex;
       flex-direction: column;
+      text-decoration: none;
 
       padding: 2rem;
       max-width: 400px;
@@ -117,6 +172,28 @@
           color: var(--link);
         }
       }
+
+      &:hover {
+        box-shadow: var(--panel-shadow);
+        cursor: pointer;
+      }
     }
+  }
+}
+
+@keyframes simple-animation {
+  0% {
+    background: var(--secondary-dark);
+    top: -23.4%;
+  }
+
+  40% {
+    background: var(--dominating);
+    top: 12.6%;
+  }
+
+  100% {
+    background: var(--link);
+    top: 16.6%;
   }
 }

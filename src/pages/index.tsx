@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { FiArrowDown } from "react-icons/fi";
 
 import cleanerTool from "../../public/assets/cleaner-tool.svg";
 import styles from "../styles/pages/Home.module.scss";
@@ -26,10 +29,15 @@ export default function Home() {
                 contracts, stop-and-go service, and fully customized cleaning
                 packages.
               </p>
-              <button type="button">learn more</button>
+              <div>
+                <button type="button">learn more</button>
+                <a href="#service-group">
+                  services <FiArrowDown />
+                </a>
+              </div>
             </div>
 
-            <article>
+            <article className={styles.imageStylus}>
               <img
                 src="https://images.unsplash.com/photo-1610276173132-c47d148ab626?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                 alt="initial styles"
@@ -57,54 +65,63 @@ export default function Home() {
 
         <section id="service-group" className={styles.servicesGroup}>
           <div>
-            <div className="service">
-              <header>
+            <Link href="/" passHref>
+              <a>
+                <header>
+                  <div>
+                    <Image src={cleanerTool} alt="commercial photo" />
+                  </div>
+                  <div>
+                    <strong>commercial</strong>
+                  </div>
+                </header>
                 <div>
-                  <Image src={cleanerTool} alt="commercial photo" />
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
                 </div>
+              </a>
+            </Link>
+            <Link href="/" passHref>
+              <a>
+                <header>
+                  <div>
+                    <Image src={cleanerTool} alt="commercial photo" />
+                  </div>
+                  <div>
+                    <strong>commercial</strong>
+                  </div>
+                </header>
                 <div>
-                  <strong>commercial</strong>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
                 </div>
-              </header>
-              <div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-              </div>
-            </div>
-            <div className="service">
-              <header>
+              </a>
+            </Link>
+            <Link href="/" passHref>
+              <a>
+                <header>
+                  <div>
+                    <Image src={cleanerTool} alt="commercial photo" />
+                  </div>
+                  <div>
+                    <strong>commercial</strong>
+                  </div>
+                </header>
                 <div>
-                  <Image src={cleanerTool} alt="commercial photo" />
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
                 </div>
-                <div>
-                  <strong>commercial</strong>
-                </div>
-              </header>
-              <div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-              </div>
-            </div>
-            <div className="service">
-              <header>
-                <div>
-                  <Image src={cleanerTool} alt="commercial photo" />
-                </div>
-                <div>
-                  <strong>commercial</strong>
-                </div>
-              </header>
-              <div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-              </div>
-            </div>
+              </a>
+            </Link>
           </div>
           <hr />
         </section>

@@ -9,6 +9,7 @@ html,
 body,
 #root {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -17,6 +18,8 @@ body,
 
   --header-height: 7.5rem;
   --header-background: #fafafa;
+  --panel-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --global-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
   --primary-dark: #121212;
   --secondary-dark: #212335;
@@ -29,7 +32,9 @@ body,
   --secondary-ground: #f8f8f8;
   --text-color: #413f3f;
   --link: #4059ce;
-  --link-disfoque: #526bda;
+  --link-desfoque: #526bda;
+
+  --animation-sample: simple-animation 0.8s ease forwards;
 
   --divider: linear-gradient(
     270deg,
