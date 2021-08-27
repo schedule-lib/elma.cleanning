@@ -14,6 +14,10 @@
   right: 0;
   z-index: 100;
 
+  @media screen and (max-width: 1180px) {
+    padding: 0 2rem;
+  }
+
   > nav {
     max-width: var(--limit-width);
 
@@ -45,6 +49,52 @@
           transition: color 0.2s;
 
           color: var(--link);
+        }
+      }
+    }
+
+    .menu {
+      > div {
+        display: none;
+
+        svg {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+
+      &.open {
+        .modal {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          position: absolute;
+          top: var(--header-height);
+          left: 0;
+          right: 0;
+          background: var(--dominate);
+          min-height: 10rem;
+
+          > ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 595px) {
+        > ul {
+          display: none;
+        }
+
+        .controls {
+          display: initial;
         }
       }
     }
