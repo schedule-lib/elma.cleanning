@@ -65,7 +65,7 @@ export default function Home() {
 
         <section id="service-group" className={styles.servicesGroup}>
           <div>
-            <Link href="/" passHref>
+            <Link href="/">
               <a>
                 <header>
                   <div>
@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
               </a>
             </Link>
-            <Link href="/" passHref>
+            <Link href="/">
               <a>
                 <header>
                   <div>
@@ -103,7 +103,7 @@ export default function Home() {
                 </div>
               </a>
             </Link>
-            <Link href="/" passHref>
+            <Link href="/">
               <a>
                 <header>
                   <div>
@@ -137,6 +137,50 @@ export default function Home() {
               content here&apos;, making it look like readable English. Many
               desktop publishing packages.
             </h3>
+          </div>
+          <hr />
+        </section>
+
+        <section id="service-module" className={styles.servicesModule}>
+          <div>
+            <Link href="/">
+              <a>
+                <header>
+                  <div>
+                    <Image src={cleanerTool} alt="commercial photo" />
+                  </div>
+                  <div>
+                    <strong>commercial</strong>
+                  </div>
+                </header>
+                <div>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </div>
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <header>
+                  <div>
+                    <Image src={cleanerTool} alt="commercial photo" />
+                  </div>
+                  <div>
+                    <strong>commercial</strong>
+                  </div>
+                </header>
+                <div>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                </div>
+              </a>
+            </Link>
           </div>
           <hr />
         </section>

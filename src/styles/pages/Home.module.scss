@@ -8,6 +8,10 @@
   min-height: calc(100vh - var(--header-height));
   position: relative;
 
+  @media screen and (max-width: 1237px) {
+    padding: 0 2rem;
+  }
+
   > div {
     margin: 0 auto;
     margin-top: 15rem;
@@ -84,10 +88,26 @@
           background: var(--link);
         }
       }
+
+      @media screen and (max-width: 1072px) {
+        max-width: 487px;
+
+        h1 {
+          max-width: 487px;
+          font-size: 2rem;
+        }
+        p {
+          max-width: 387px;
+        }
+      }
     }
 
     > article {
       flex: 1;
+
+      @media screen and (max-width: 1072px) {
+        max-width: 487px;
+      }
     }
   }
 
@@ -146,6 +166,48 @@
   > div {
     display: flex;
     gap: 0.5rem;
+    padding: 5rem 0;
+    max-width: var(--limit-width);
+    width: 100%;
+    margin: 0 auto;
+    // = = = = = Service Box = = = = = =
+    > a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+
+      padding: 2rem;
+      max-width: 400px;
+      border-radius: 0.2rem;
+
+      background: var(--secondary-ground);
+
+      header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        strong {
+          margin-left: 1rem;
+          color: var(--link);
+        }
+      }
+
+      &:hover {
+        box-shadow: var(--panel-shadow);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.servicesModule {
+  position: relative;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
     padding: 5rem 0;
     max-width: var(--limit-width);
     width: 100%;
