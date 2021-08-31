@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FiArrowDown } from "react-icons/fi";
 
 import cleanerTool from "../../public/assets/cleaner-tool.svg";
+import { ServiceGroup } from "../components/ServiceGroup";
 import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
@@ -63,68 +64,7 @@ export default function Home() {
           <hr />
         </section>
 
-        <section id="service-group" className={styles.servicesGroup}>
-          <div>
-            <Link href="/">
-              <a>
-                <header>
-                  <div>
-                    <Image src={cleanerTool} alt="commercial photo" />
-                  </div>
-                  <div>
-                    <strong>commercial</strong>
-                  </div>
-                </header>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <header>
-                  <div>
-                    <Image src={cleanerTool} alt="commercial photo" />
-                  </div>
-                  <div>
-                    <strong>commercial</strong>
-                  </div>
-                </header>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-              </a>
-            </Link>
-            <Link href="/">
-              <a>
-                <header>
-                  <div>
-                    <Image src={cleanerTool} alt="commercial photo" />
-                  </div>
-                  <div>
-                    <strong>commercial</strong>
-                  </div>
-                </header>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-              </a>
-            </Link>
-          </div>
-          <hr />
-        </section>
+        <ServiceGroup />
 
         <section id="our-services" className={styles.aboutSection}>
           <div>
@@ -143,14 +83,14 @@ export default function Home() {
 
         <section id="service-module" className={styles.servicesModule}>
           <div>
-            <Link href="/">
+            <Link href="/services/nursey-and-school">
               <a>
                 <header>
                   <div>
                     <Image src={cleanerTool} alt="commercial photo" />
                   </div>
                   <div>
-                    <strong>commercial</strong>
+                    <strong>Nursery and School</strong>
                   </div>
                 </header>
                 <div>
@@ -162,14 +102,14 @@ export default function Home() {
                 </div>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/services/store-cleaning">
               <a>
                 <header>
                   <div>
                     <Image src={cleanerTool} alt="commercial photo" />
                   </div>
                   <div>
-                    <strong>commercial</strong>
+                    <strong>Store cleaning</strong>
                   </div>
                 </header>
                 <div>
