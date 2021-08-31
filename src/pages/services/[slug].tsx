@@ -1,7 +1,7 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { ServiceGroup } from "../../components/ServiceGroup";
 import styles from "../../styles/pages/Services.module.scss";
@@ -9,6 +9,7 @@ import styles from "../../styles/pages/Services.module.scss";
 type ServiceType = {
   id: string;
   title: string;
+  why?: string;
   content: string;
   config: {
     imageUrl: string;
@@ -20,6 +21,8 @@ type ServiceComponentProps = {
 
 export default function Services({ service }: ServiceComponentProps) {
   const [slug] = useState<ServiceType>(service);
+
+  useEffect(() => {}, [slug]);
 
   if (!slug) {
     return <h1>Service not found</h1>;
@@ -35,7 +38,9 @@ export default function Services({ service }: ServiceComponentProps) {
 
       <main className={styles.mainContainer}>
         <div>
-          <h1>How our service works</h1>
+          <div>
+            <h1>How our service works</h1>
+          </div>
         </div>
         <section className={styles.contentContainer}>
           <div className={styles.content}>
@@ -51,6 +56,7 @@ export default function Services({ service }: ServiceComponentProps) {
             </aside>
             <div>
               <h3>{slug.title}</h3>
+              {!!slug.why && <span>{slug.why}</span>}
               <p>{slug.content}</p>
             </div>
           </div>
@@ -79,8 +85,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     {
       id: "pharmacy",
       title: "Pharmacy",
+      why: "Why you need medical office cleaning services",
       content:
-        "Why you need medical office cleaning services  Medical office cleaning involves the thorough cleaning of medical office spaces like clinics, doctor offices, dental offices, and more. When patients and other visitors enter your medical space, they expect to enter an environment that builds trust and reflects the high hygiene and sanitation standards of the medical profession. Keeping your medical office looking professional, clean, organized is essential for delivering the kind of experience your guests will expect.   A spotless medical office gives patients and visitors the peace of mind they need to feel comfortable entrusting their health and wellbeing to you. Best of all, ensuring your office consistently maintains that spotless and sanitary appearance can be easy if you have a professional cleaning company to take care of it for you.",
+        "Medical office cleaning involves the thorough cleaning of medical office spaces like clinics, doctor offices, dental offices, and more. When patients and other visitors enter your medical space, they expect to enter an environment that builds trust and reflects the high hygiene and sanitation standards of the medical profession. Keeping your medical office looking professional, clean, organized is essential for delivering the kind of experience your guests will expect.   A spotless medical office gives patients and visitors the peace of mind they need to feel comfortable entrusting their health and wellbeing to you. Best of all, ensuring your office consistently maintains that spotless and sanitary appearance can be easy if you have a professional cleaning company to take care of it for you.",
       config: {
         imageUrl:
           "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
@@ -89,8 +96,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     {
       id: "store-cleaning",
       title: "Store Cleaning",
+      why: "Why you need store cleaning services",
       content:
-        "Why you need store cleaning services  When people walk into a store, the first thing they will notice is the cleanliness. After all, the store is the physical space of your business, the place where customers touch base with the services, products, and people representing your organization. Part of running a store is curating the shopping experience from start to finish, including taking into account the retail or store cleaning considerations necessary for a great customer experience.   The impression you make on clean-conscious customers is often the deciding factor as to whether they choose to come in, stay, and make a purchase. No shopper wants to enter a space that has sticky floors, dusty shelves, and a general lack of care for the messes that will naturally accumulate within a shop. A messy, dirty store immediately makes the wrong impression and turns potential buyers into definite leavers. Dirty windows and messy interiors will actively discourage the reactions you want at the crucial decision points",
+        "When people walk into a store, the first thing they will notice is the cleanliness. After all, the store is the physical space of your business, the place where customers touch base with the services, products, and people representing your organization. Part of running a store is curating the shopping experience from start to finish, including taking into account the retail or store cleaning considerations necessary for a great customer experience.   The impression you make on clean-conscious customers is often the deciding factor as to whether they choose to come in, stay, and make a purchase. No shopper wants to enter a space that has sticky floors, dusty shelves, and a general lack of care for the messes that will naturally accumulate within a shop. A messy, dirty store immediately makes the wrong impression and turns potential buyers into definite leavers. Dirty windows and messy interiors will actively discourage the reactions you want at the crucial decision points",
       config: {
         imageUrl:
           "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
@@ -109,8 +117,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     {
       id: "nursey-and-school",
       title: "museu and school",
+      why: "Why you need daycare and school cleaning services",
       content:
-        "Why you need daycare and school cleaning services  Daycare centres and schools present a unique cleaning challenge because they are a space where inhabitants are often actively encouraged to get down and dirty, learning through touch and interaction with various objects, playgrounds, and surfaces the children have at their disposal. Enriching children’s lives at schools and day cares means allowing them to be free in a space where they can express themselves and be physical, often on the floor.   Once all the children and staff go home for the day, someone needs to be there cleaning up the mess that’s left and ensuring all surfaces are thoroughly cleaned by the next morning. A professional daycare and school cleaning company is the most reliable choice for ensuring that the children's’ spaces are consistently kept impeccably clean.",
+        "Daycare centres and schools present a unique cleaning challenge because they are a space where inhabitants are often actively encouraged to get down and dirty, learning through touch and interaction with various objects, playgrounds, and surfaces the children have at their disposal. Enriching children’s lives at schools and day cares means allowing them to be free in a space where they can express themselves and be physical, often on the floor.   Once all the children and staff go home for the day, someone needs to be there cleaning up the mess that’s left and ensuring all surfaces are thoroughly cleaned by the next morning. A professional daycare and school cleaning company is the most reliable choice for ensuring that the children's’ spaces are consistently kept impeccably clean.",
       config: {
         imageUrl:
           "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",

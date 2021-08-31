@@ -11,9 +11,15 @@
       rgba(164, 222, 255, 0) 100%
     );
 
-    h1 {
-      display: inline-block;
-      margin: 2.5rem 3rem;
+    > div {
+      max-width: var(--limit-width);
+      width: 100%;
+      margin: 0 auto;
+
+      h1 {
+        display: inline-block;
+        margin: 2.5rem 0;
+      }
     }
   }
 }
@@ -45,8 +51,16 @@
         font-size: 1.7rem;
         margin-bottom: 0.5rem;
       }
+      span {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        padding: 0.3rem 0.4rem;
+        border-radius: 0.3rem;
+        background: var(--dominating);
+      }
       p {
         line-height: 1.5;
+        padding: 0 0.2rem;
       }
     }
   }
