@@ -1,0 +1,53 @@
+.mainContainer {
+  margin-top: var(--header-height);
+  margin-bottom: 4rem;
+  width: 100%;
+
+  > div {
+    height: 12rem;
+    background-image: linear-gradient(
+      180deg,
+      #cacaca 0%,
+      rgba(164, 222, 255, 0) 100%
+    );
+
+    h1 {
+      display: inline-block;
+      margin: 2.5rem 3rem;
+    }
+  }
+}
+
+.contentContainer {
+  .content {
+    display: flex;
+    gap: 1rem;
+    max-width: var(--limit-width);
+    width: 100%;
+    margin: 0 auto;
+
+    > aside {
+      flex: 1;
+
+      > div {
+        max-width: 500px;
+      }
+
+      img {
+        border-radius: 0.5rem;
+      }
+    }
+
+    > div {
+      flex: 1;
+
+      h3 {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+}
