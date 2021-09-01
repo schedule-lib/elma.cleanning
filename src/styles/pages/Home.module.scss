@@ -199,12 +199,24 @@
   position: relative;
 
   > div {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 0.5rem;
+
     padding: 5rem 0;
     max-width: var(--limit-width);
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1222px) {
+      padding: 5rem 1.5rem;
+    }
+    @media screen and (max-width: 544px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
     // = = = = = Service Box = = = = = =
     > a {
       display: flex;
