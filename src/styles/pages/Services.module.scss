@@ -11,10 +11,21 @@
       rgba(164, 222, 255, 0) 100%
     );
 
+    @media screen and (max-width: 1237px) {
+      padding: 0 2rem;
+    }
+
     > div {
       max-width: var(--limit-width);
       width: 100%;
       margin: 0 auto;
+
+      @media screen and (max-width: 1110px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 670px) {
+        text-align: initial;
+      }
 
       h1 {
         display: inline-block;
@@ -25,15 +36,30 @@
 }
 
 .contentContainer {
+  @media screen and (max-width: 1237px) {
+    padding: 0 2rem;
+  }
+
   .content {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
     max-width: var(--limit-width);
     width: 100%;
     margin: 0 auto;
 
+    @media screen and (max-width: 1110px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (max-width: 670px) {
+      align-items: flex-start;
+    }
+
     > aside {
-      flex: 1;
+      @media screen and (max-width: 1110px) {
+        max-width: 600px;
+      }
 
       > div {
         max-width: 500px;
@@ -45,7 +71,10 @@
     }
 
     > div {
-      flex: 1;
+      max-width: 600px;
+
+      @media screen and (max-width: 1039px) {
+      }
 
       h3 {
         font-size: 1.7rem;
