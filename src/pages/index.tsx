@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { FiArrowDown } from "react-icons/fi";
 
-import cleanerTool from "../../public/assets/cleaner-tool.svg";
 import { ServiceGroup } from "../components/ServiceGroup";
+import ServicesModule from "../components/ServicesModule";
 import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
@@ -81,49 +79,7 @@ export default function Home() {
           <hr />
         </section>
 
-        <section id="service-module" className={styles.servicesModule}>
-          <div>
-            <Link href="/services/nursey-and-school">
-              <a>
-                <header>
-                  <div>
-                    <Image src={cleanerTool} alt="commercial photo" />
-                  </div>
-                  <div>
-                    <strong>Nursery and School</strong>
-                  </div>
-                </header>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-              </a>
-            </Link>
-            <Link href="/services/store-cleaning">
-              <a>
-                <header>
-                  <div>
-                    <Image src={cleanerTool} alt="commercial photo" />
-                  </div>
-                  <div>
-                    <strong>Store cleaning</strong>
-                  </div>
-                </header>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-              </a>
-            </Link>
-          </div>
-          <hr />
-        </section>
+        <ServicesModule />
       </main>
     </div>
   );

@@ -254,11 +254,17 @@
   > div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 0.8rem;
+
     padding: 5rem 0;
     max-width: var(--limit-width);
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1222px) {
+      padding: 5rem 1.5rem;
+    }
     // = = = = = Service Box = = = = = =
     > a {
       display: flex;
