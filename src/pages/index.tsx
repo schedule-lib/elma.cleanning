@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { FiArrowDown } from "react-icons/fi";
 
 import { ServiceGroup } from "../components/ServiceGroup";
@@ -7,6 +8,12 @@ import ServicesModule from "../components/ServicesModule";
 import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
+  const router = useRouter();
+
+  function navigateToServicesPage() {
+    router.push("/services");
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +36,9 @@ export default function Home() {
                 packages.
               </p>
               <div>
-                <button type="button">learn more</button>
+                <button type="button" onClick={navigateToServicesPage}>
+                  learn more
+                </button>
                 <a href="#service-group">
                   services <FiArrowDown />
                 </a>
