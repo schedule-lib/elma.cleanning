@@ -18,6 +18,16 @@
     display: flex;
     max-width: var(--limit-width);
 
+    @media screen and (max-width: 1015px) {
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 790px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 12rem;
+    }
+
     > div {
       flex: 1;
 
@@ -100,6 +110,9 @@
           max-width: 387px;
         }
       }
+      @media screen and (max-width: 850px) {
+        max-width: 400px;
+      }
     }
 
     > article {
@@ -107,6 +120,16 @@
 
       @media screen and (max-width: 1072px) {
         max-width: 487px;
+      }
+      @media screen and (max-width: 1015px) {
+        max-width: 407px;
+      }
+      @media screen and (max-width: 850px) {
+        max-width: 350px;
+      }
+      @media screen and (max-width: 790px) {
+        margin: 5rem 0;
+        max-width: 500px;
       }
     }
   }
@@ -125,12 +148,20 @@
       height: 100%;
       width: 26rem;
       position: absolute;
-      border-radius: 50%;
       right: -3rem;
       z-index: 0;
+      overflow: hidden;
+      border-radius: 50%;
       transition: all 0.3s ease;
 
       animation: simple-animation 0.8s ease forwards;
+
+      @media screen and (max-width: 874px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 790px) {
+        width: 23rem;
+      }
     }
   }
 }
