@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <Link href="/" passHref>
+        <Link href="/#keep-menu" passHref>
           <MyAnchorToLogo src={elmaCleaningLogo} alt="elma cleaning Logo" />
         </Link>
 

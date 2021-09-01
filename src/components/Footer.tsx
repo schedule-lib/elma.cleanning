@@ -12,7 +12,7 @@ function Footer() {
       <div className={styles.footerContainer}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <Link href="/#welcome" passHref>
+            <Link href="/#keep-menu" passHref>
               <MyAnchorToLogo src={elmaCleaningLogo} alt="Elma cleaning logo" />
             </Link>
             <span>
@@ -71,7 +71,7 @@ function Footer() {
             </li>
           </div>
 
-          <a href="#welcome" type="button">
+          <a href="#keep-menu" type="button">
             <FiChevronUp size={30} />
           </a>
         </div>
