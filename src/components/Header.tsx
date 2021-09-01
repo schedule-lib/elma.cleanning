@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
+import elmaCleaningLogo from "../../public/assets/elma-cleaning-logo.svg";
 import styles from "../styles/components/Header.module.scss";
+import { MyAnchorToLogo } from "./MyAnchorToLogo";
 
 function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -14,7 +17,9 @@ function Header() {
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <Link href="/">Elma Cleaning</Link>
+        <Link href="/" passHref>
+          <MyAnchorToLogo src={elmaCleaningLogo} alt="elma cleaning Logo" />
+        </Link>
 
         <div
           className={`${styles.menu} ${menuIsOpen ? styles.open : undefined}`}

@@ -1,9 +1,10 @@
-import Image from "next/image";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link";
 import { FiInstagram, FiChevronUp } from "react-icons/fi";
 
-import genesysOfficialLogo from "../../public/assets/gs-logo-point-wt.svg";
+import elmaCleaningLogo from "../../public/assets/ec-logo-preview.svg";
 import styles from "../styles/components/Footer.module.scss";
+import { MyAnchorToLogo } from "./MyAnchorToLogo";
 
 function Footer() {
   return (
@@ -11,8 +12,8 @@ function Footer() {
       <div className={styles.footerContainer}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <Link href="/" passHref>
-              <Image src={genesysOfficialLogo} alt="elma cleaning!" />
+            <Link href="/#welcome" passHref>
+              <MyAnchorToLogo src={elmaCleaningLogo} alt="Elma cleaning logo" />
             </Link>
             <span>
               &copy; elma cleaning 2021 <br /> All rights reserved.
