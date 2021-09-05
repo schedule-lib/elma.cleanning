@@ -103,7 +103,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "When people walk into a store, the first thing they will notice is the cleanliness. After all, the store is the physical space of your business, the place where customers touch base with the services, products, and people representing your organization. Part of running a store is curating the shopping experience from start to finish, including taking into account the retail or store cleaning considerations necessary for a great customer experience.   The impression you make on clean-conscious customers is often the deciding factor as to whether they choose to come in, stay, and make a purchase. No shopper wants to enter a space that has sticky floors, dusty shelves, and a general lack of care for the messes that will naturally accumulate within a shop. A messy, dirty store immediately makes the wrong impression and turns potential buyers into definite leavers. Dirty windows and messy interiors will actively discourage the reactions you want at the crucial decision points",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
+          "https://images.unsplash.com/photo-1601160458000-2b11f9fa1a0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2xlYW5pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
     {
@@ -113,7 +113,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Construction is a lucrative business, but many frustrations can amass from the resulting debris of the process. Each stage of the building can leave behind increasing unwanted pieces and parts - where project workers don't have the time to address them. We have built our service on assisting construction projects addressing the necessary cleaning. Our professionals are very knowledgeable when it comes to construction cleaning. We provide reliable services for post-construction cleaning and multi-stage construction cleaning as well.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
+          "https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
     {
@@ -124,7 +124,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Daycare centres and schools present a unique cleaning challenge because they are a space where inhabitants are often actively encouraged to get down and dirty, learning through touch and interaction with various objects, playgrounds, and surfaces the children have at their disposal. Enriching children’s lives at schools and day cares means allowing them to be free in a space where they can express themselves and be physical, often on the floor.   Once all the children and staff go home for the day, someone needs to be there cleaning up the mess that’s left and ensuring all surfaces are thoroughly cleaned by the next morning. A professional daycare and school cleaning company is the most reliable choice for ensuring that the children's’ spaces are consistently kept impeccably clean.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
+          "https://images.unsplash.com/photo-1627905646269-7f034dcc5738?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
   ];
