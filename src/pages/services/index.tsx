@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import { ContractSpecification } from "../../components/ContractSpecification";
 import { ServiceGroup } from "../../components/ServiceGroup";
 import ServicesModule from "../../components/ServicesModule";
 import styles from "../../styles/pages/ServicePage.module.scss";
@@ -17,6 +18,7 @@ export default function ServicesPage() {
         <div>
           <div>
             <h1>all our services</h1>
+            <ContractSpecification />
           </div>
         </div>
 

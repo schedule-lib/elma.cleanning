@@ -16,6 +16,9 @@
     @media screen and (max-width: 736px) {
       height: calc(100vh - var(--header-height));
     }
+    @media screen and (max-width: 544px) {
+      background: #5c3d2e;
+    }
   }
 
   > div {
