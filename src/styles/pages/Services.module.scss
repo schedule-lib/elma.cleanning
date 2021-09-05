@@ -94,6 +94,10 @@
         line-height: 1.5;
         padding: 0 0.2rem;
       }
+
+      p + p {
+        margin-top: 1rem;
+      }
     }
   }
 }
