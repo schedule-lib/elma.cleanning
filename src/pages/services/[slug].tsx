@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+import { ContractSpecification } from "../../components/ContractSpecification";
 import { ServiceGroup } from "../../components/ServiceGroup";
 import styles from "../../styles/pages/Services.module.scss";
 
@@ -39,7 +40,8 @@ export default function Services({ service }: ServiceComponentProps) {
       <main className={styles.mainContainer}>
         <div>
           <div>
-            <h1>How our service works</h1>
+            <h1 className={styles.text}>How our service works</h1>
+            <ContractSpecification />
           </div>
         </div>
         <section className={styles.contentContainer}>
@@ -90,7 +92,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Medical office cleaning involves the thorough cleaning of medical office spaces like clinics, doctor offices, dental offices, and more. When patients and other visitors enter your medical space, they expect to enter an environment that builds trust and reflects the high hygiene and sanitation standards of the medical profession. Keeping your medical office looking professional, clean, organized is essential for delivering the kind of experience your guests will expect.   A spotless medical office gives patients and visitors the peace of mind they need to feel comfortable entrusting their health and wellbeing to you. Best of all, ensuring your office consistently maintains that spotless and sanitary appearance can be easy if you have a professional cleaning company to take care of it for you.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
+          "https://images.unsplash.com/photo-1563453392212-326f5e854473?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2xlYW5pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
     {

@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { FiArrowDown } from "react-icons/fi";
 
+import ecBackground from "../../public/assets/e-cleaning-foreground.jpg";
 import { ServiceGroup } from "../components/ServiceGroup";
 import ServicesModule from "../components/ServicesModule";
 import styles from "../styles/pages/Home.module.scss";
@@ -24,16 +26,24 @@ export default function Home() {
 
       <main className={styles.mainContainer}>
         <section id="welcome" className={styles.initialSection}>
+          <article className="background">
+            <Image
+              objectFit="unset"
+              alt="cleaning service"
+              src={ecBackground}
+            />
+          </article>
+
           <div>
-            <div>
-              <h1>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting.
-              </h1>
+            <div className={styles.textContainer}>
+              <h1>Commercial cleaning</h1>
               <p>
-                Here at Arelli, we’re changing the cleaning game with no term
-                contracts, stop-and-go service, and fully customized cleaning
-                packages.
+                There’s always a risk of cross contamination when foreign
+                contaminants are not removed prior to the disinfection process.
+                When it’s not an emergency, we recommend having your facility
+                cleaned prior to the disinfection process. You can have your
+                current cleaning crews perform this or Elma can provide this
+                service for you.
               </p>
               <div>
                 <button type="button" onClick={navigateToServicesPage}>
@@ -44,13 +54,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
-            <article className={styles.imageStylus}>
-              <img
-                src="https://images.unsplash.com/photo-1610276173132-c47d148ab626?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt="initial styles"
-              />
-            </article>
           </div>
 
           <hr />

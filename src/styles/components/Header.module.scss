@@ -1,4 +1,6 @@
 .headerContainer {
+  z-index: 100;
+
   height: var(--header-height);
   background: var(--header-background);
 
