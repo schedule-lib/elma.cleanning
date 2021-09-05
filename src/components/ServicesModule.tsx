@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import cleanerTool from "../../public/assets/cleaner-tool.svg";
+import cleanerTool from "../../public/assets/cleaning-icon.png";
 import styles from "../styles/pages/Home.module.scss";
 
 export default function ServicesModule() {
@@ -17,15 +17,9 @@ export default function ServicesModule() {
                 <Image src={cleanerTool} alt="commercial photo" />
               </div>
               <div>
-                <strong>Nursery and School</strong>
+                <strong>Nursery School</strong>
               </div>
             </header>
-            <div>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-            </div>
           </a>
         </Link>
         <Link href="/services/store-cleaning">
@@ -38,12 +32,6 @@ export default function ServicesModule() {
                 <strong>Store cleaning</strong>
               </div>
             </header>
-            <div>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-              </p>
-            </div>
           </a>
         </Link>
       </div>

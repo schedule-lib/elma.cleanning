@@ -4,7 +4,7 @@ import Image from "next/image";
 // import Link from "next/link";
 import { useEffect } from "react";
 
-import cleanerTool from "../../public/assets/cleaner-tool.svg";
+import cleanerTool from "../../public/assets/cleaning-icon.png";
 import styles from "../styles/pages/Home.module.scss";
 
 function ServiceGroup() {
@@ -22,12 +22,6 @@ function ServiceGroup() {
               <strong>Office Cleaning</strong>
             </div>
           </header>
-          <div>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
         </a>
         <a href="/services/pharmacy">
           <header>
@@ -38,12 +32,6 @@ function ServiceGroup() {
               <strong>Pharmacy</strong>
             </div>
           </header>
-          <div>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
         </a>
         <a href="/services/cleaning-and-construction">
           <header>
@@ -51,15 +39,9 @@ function ServiceGroup() {
               <Image src={cleanerTool} alt="commercial photo" />
             </div>
             <div>
-              <strong>Cleaning and construction</strong>
+              <strong>Construction and pre-construction</strong>
             </div>
           </header>
-          <div>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-          </div>
         </a>
       </div>
       <hr />
