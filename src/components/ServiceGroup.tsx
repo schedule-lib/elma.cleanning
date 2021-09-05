@@ -15,30 +15,30 @@ function ServiceGroup() {
       <div>
         <a href="/services/office-cleaning">
           <header>
-            <div>
+            <div className={styles.left}>
               <Image src={cleanerTool} alt="commercial photo" />
             </div>
-            <div>
+            <div className={styles.right}>
               <strong>Office Cleaning</strong>
             </div>
           </header>
         </a>
         <a href="/services/pharmacy">
           <header>
-            <div>
+            <div className={styles.left}>
               <Image src={cleanerTool} alt="commercial photo" />
             </div>
-            <div>
+            <div className={styles.right}>
               <strong>Pharmacy</strong>
             </div>
           </header>
         </a>
         <a href="/services/cleaning-and-construction">
           <header>
-            <div>
+            <div className={styles.left}>
               <Image src={cleanerTool} alt="commercial photo" />
             </div>
-            <div>
+            <div className={styles.right}>
               <strong>Construction and pre-construction</strong>
             </div>
           </header>

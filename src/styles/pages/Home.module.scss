@@ -18,6 +18,10 @@
     }
     @media screen and (max-width: 544px) {
       background: #5c3d2e;
+
+      img {
+        height: 500px !important;
+      }
     }
   }
 
@@ -207,6 +211,14 @@
         align-items: center;
         margin-bottom: 1rem;
 
+        > .left {
+          flex: 1;
+        }
+
+        > .right {
+          flex: 2;
+        }
+
         strong {
           // margin-left: 1rem;
           color: var(--link);
@@ -261,6 +273,14 @@
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
+
+        > .left {
+          flex: 1;
+        }
+
+        > .right {
+          flex: 2;
+        }
 
         strong {
           margin-left: 1rem;
