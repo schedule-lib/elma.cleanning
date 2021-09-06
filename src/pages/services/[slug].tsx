@@ -119,7 +119,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Construction is a lucrative business, but many frustrations can amass from the resulting debris of the process. Each stage of the building can leave behind increasing unwanted pieces and parts - where project workers don't have the time to address them. We have built our service on assisting construction projects addressing the necessary cleaning. Our professionals are very knowledgeable when it comes to construction cleaning. We provide reliable services for post-construction cleaning and multi-stage construction cleaning as well.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1437326300822-01d8f13c024f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
       },
     },
     {
@@ -130,7 +130,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Daycare centres and schools present a unique cleaning challenge because they are a space where inhabitants are often actively encouraged to get down and dirty, learning through touch and interaction with various objects, playgrounds, and surfaces the children have at their disposal. Enriching children’s lives at schools and day cares means allowing them to be free in a space where they can express themselves and be physical, often on the floor.   Once all the children and staff go home for the day, someone needs to be there cleaning up the mess that’s left and ensuring all surfaces are thoroughly cleaned by the next morning. A professional daycare and school cleaning company is the most reliable choice for ensuring that the children's’ spaces are consistently kept impeccably clean.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1627905646269-7f034dcc5738?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
   ];

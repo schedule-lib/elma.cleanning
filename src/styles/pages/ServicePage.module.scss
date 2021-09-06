@@ -5,11 +5,8 @@
 
   > div {
     min-height: 12rem;
-    background-image: linear-gradient(
-      180deg,
-      #cacaca 0%,
-      rgba(164, 222, 255, 0) 100%
-    );
+    background-image: linear-gradient(180deg, #cacaca 0%, #ffc069 100%);
+    padding-bottom: 1rem;
 
     @media screen and (max-width: 1237px) {
       padding: 0 2rem;

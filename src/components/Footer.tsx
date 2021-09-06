@@ -61,7 +61,7 @@ function Footer() {
           <div className={styles.socialContainer}>
             <li aria-label="Instagram">
               <a
-                href="https://instagram.com/ginesis.sys"
+                href="https://www.instagram.com/elmacleaning5/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
