@@ -39,7 +39,7 @@ function ServiceGroup() {
               <Image src={cleanerTool} alt="commercial photo" />
             </div>
             <div className={styles.right}>
-              <strong>Construction and pre-construction</strong>
+              <strong>Post Construction & Renovation</strong>
             </div>
           </header>
         </a>

@@ -8,15 +8,15 @@ import styles from "../styles/pages/Home.module.scss";
 
 export default function ServicesModule() {
   return (
-    <section id="service-module" className={styles.servicesModule}>
+    <section id="service-module" className={styles.servicesGroup}>
       <div>
         <Link href="/services/nursey-and-school">
           <a>
             <header>
-              <div>
+              <div className={styles.left}>
                 <Image src={cleanerTool} alt="commercial photo" />
               </div>
-              <div>
+              <div className={styles.right}>
                 <strong>Nursery School</strong>
               </div>
             </header>
@@ -25,11 +25,23 @@ export default function ServicesModule() {
         <Link href="/services/store-cleaning">
           <a>
             <header>
-              <div>
+              <div className={styles.left}>
                 <Image src={cleanerTool} alt="commercial photo" />
               </div>
-              <div>
+              <div className={styles.right}>
                 <strong>Store cleaning</strong>
+              </div>
+            </header>
+          </a>
+        </Link>
+        <Link href="/services/complete-house-cleaning">
+          <a>
+            <header>
+              <div className={styles.left}>
+                <Image src={cleanerTool} alt="commercial photo" />
+              </div>
+              <div className={styles.right}>
+                <strong>Complete house cleaning</strong>
               </div>
             </header>
           </a>

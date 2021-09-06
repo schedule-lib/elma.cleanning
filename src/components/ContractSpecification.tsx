@@ -3,7 +3,7 @@ import styles from "../styles/components/Specifications.module.scss";
 function ContractSpecification() {
   return (
     <div className={styles.container}>
-      <div>
+      <div className={styles.head}>
         <h1>Discover the peace of mind of working with Cleaners Who Care</h1>
         <p>
           Here at Elma, we’re changing the commercial cleaning game with no term

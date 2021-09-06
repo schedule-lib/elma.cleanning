@@ -13,6 +13,7 @@ type ServiceType = {
   why?: string;
   content: string;
   preContent?: string;
+  preTitle?: string;
   config: {
     imageUrl: string;
   };
@@ -33,7 +34,7 @@ export default function Services({ service }: ServiceComponentProps) {
   return (
     <div>
       <Head>
-        <title>Service | Elma cleaning</title>
+        <title>{slug.title} | Elma cleaning</title>
         <meta name="description" content="Elma, Commercial cleaning services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -58,9 +59,9 @@ export default function Services({ service }: ServiceComponentProps) {
               </div>
             </aside>
             <div>
-              {/* <h3>{slug.title}</h3> */}
               {!!slug.why && <h3>{slug.why}</h3>}
               <p>{slug.content}</p>
+              {!!slug.preTitle && <h3>{slug.preTitle}</h3>}
               <p>{slug?.preContent}</p>
             </div>
           </div>
@@ -92,7 +93,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     {
       id: "pharmacy",
       title: "Pharmacy",
-      why: "Why you need medical office cleaning services",
+      why: "why do you need medical and pharmacy consultant cleaning services",
       content:
         "Medical office cleaning involves the thorough cleaning of medical office spaces like clinics, doctor offices, dental offices, and more. When patients and other visitors enter your medical space, they expect to enter an environment that builds trust and reflects the high hygiene and sanitation standards of the medical profession. Keeping your medical office looking professional, clean, organized is essential for delivering the kind of experience your guests will expect.   A spotless medical office gives patients and visitors the peace of mind they need to feel comfortable entrusting their health and wellbeing to you. Best of all, ensuring your office consistently maintains that spotless and sanitary appearance can be easy if you have a professional cleaning company to take care of it for you.",
       config: {
@@ -113,10 +114,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     },
     {
       id: "cleaning-and-construction",
-      title: "Construction and pre-construction",
+      title: "Post Construction & Renovation Cleaning Services",
       why: "Why you need Construction services",
       content:
-        "Construction is a lucrative business, but many frustrations can amass from the resulting debris of the process. Each stage of the building can leave behind increasing unwanted pieces and parts - where project workers don't have the time to address them. We have built our service on assisting construction projects addressing the necessary cleaning. Our professionals are very knowledgeable when it comes to construction cleaning. We provide reliable services for post-construction cleaning and multi-stage construction cleaning as well.",
+        "Even before the dust settles we are there to help with any Construction Cleaning needs. Dust removal before painting, garbage removal, pressure washing or anything else you may need Life Maid Easy is there to get the job done. You can trust us to bring out the brilliance and shine in your new building project. Let us transform your construction site into the clean and beautiful master piece you created.",
       config: {
         imageUrl:
           "https://images.unsplash.com/photo-1444419988131-046ed4e5ffd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
@@ -125,12 +126,26 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     {
       id: "nursey-and-school",
       title: "Nursery and school",
-      why: "Why you need daycare and school cleaning services",
+      why: "Cleaning school and daycare",
       content:
         "Daycare centres and schools present a unique cleaning challenge because they are a space where inhabitants are often actively encouraged to get down and dirty, learning through touch and interaction with various objects, playgrounds, and surfaces the children have at their disposal. Enriching children’s lives at schools and day cares means allowing them to be free in a space where they can express themselves and be physical, often on the floor.   Once all the children and staff go home for the day, someone needs to be there cleaning up the mess that’s left and ensuring all surfaces are thoroughly cleaned by the next morning. A professional daycare and school cleaning company is the most reliable choice for ensuring that the children's’ spaces are consistently kept impeccably clean.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "https://images.unsplash.com/photo-1564429097439-e400382dc893?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+      },
+    },
+    {
+      id: "complete-house-cleaning",
+      title: "Complete house cleaning",
+      why: "Why you need residencial cleaning services",
+      content:
+        "Life Maid Easy offers complete condo, apartment and house cleaning services by professional cleaners. Our environmentally responsible cleaning services has been one of the main reasons customers pick Life Maid Easy over others in the same industry.",
+      preTitle: "Living Room and Office",
+      preContent:
+        "Living rooms are one of the busiest places in your home, so they easily become cluttered and dirty. Keeping it clean is a daily task but often times we miss certain spots. This is where we come in! Our ladies are trained to clean from “top to bottom, left to right” to clear cobwebs, clean light fixtures and ceiling fans, and more.",
+      config: {
+        imageUrl:
+          "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       },
     },
   ];
