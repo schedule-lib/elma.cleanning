@@ -63,12 +63,11 @@ export default function Home() {
           <div>
             <h2>About us</h2>
             <h3>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using &apos;Content here,
-              content here&apos;, making it look like readable English. Many
-              desktop publishing packages.
+              Elma Cliner is an office, residential, commercial and
+              post-construction cleaning service provider. we provide services
+              in the Toronto and GTHA areas. We offer the best cleaning and are
+              proud to offer you a wide range of effective, reliable and
+              unmatched quality solutions. All at affordable prices.
             </h3>
           </div>
           <hr />
@@ -78,14 +77,9 @@ export default function Home() {
 
         <section id="our-services" className={styles.aboutSection}>
           <div>
-            <h2>Our services</h2>
             <h3>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using &apos;Content here,
-              content here&apos;, making it look like readable English. Many
-              desktop publishing packages.
+              Our services are carried out by our competent, experienced,
+              discreet and reliable team.
             </h3>
           </div>
           <hr />

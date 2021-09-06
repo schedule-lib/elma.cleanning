@@ -86,7 +86,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "An office space that is clean and sparkling the next morning also provides a fresh start for employees to gear up for a comfortable and productive work day, unhindered by debris, mess, or possibly harmful germs. Like clothing, every visual component of a business, including its workspace, is a reflection of how it conducts itself professionally. Using a professional commercial cleaning company to keep your office clean allows you to put your best foot forward for your staff and for any clients that may come through the door.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5pbmclMjBzZXJ2aWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60.",
+          "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsZWFuaW5nJTIwb2ZmaWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       },
     },
     {
