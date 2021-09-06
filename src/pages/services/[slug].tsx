@@ -119,7 +119,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         "Construction is a lucrative business, but many frustrations can amass from the resulting debris of the process. Each stage of the building can leave behind increasing unwanted pieces and parts - where project workers don't have the time to address them. We have built our service on assisting construction projects addressing the necessary cleaning. Our professionals are very knowledgeable when it comes to construction cleaning. We provide reliable services for post-construction cleaning and multi-stage construction cleaning as well.",
       config: {
         imageUrl:
-          "https://images.unsplash.com/photo-1437326300822-01d8f13c024f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
+          "https://images.unsplash.com/photo-1444419988131-046ed4e5ffd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
       },
     },
     {
