@@ -31,9 +31,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="mailto:elma.cleanning@gmail.com">
-                jurema.cleaning@gmail.com
-              </a>
+              <a href="mailto:hello@elmacleaning.com">hello@elmacleaning.com</a>
             </li>
           </ul>
           <div className={styles.controls}>
@@ -56,7 +54,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="mailto:elma.cleanning@gmail.com">
+                <a href="mailto:hello@elmacleaning.com">
                   hello@elmacleaning.com
                 </a>
               </li>
