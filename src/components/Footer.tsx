@@ -31,7 +31,7 @@ function Footer() {
             <ul>
               <span>Jurema Cleaning</span>
               <li>
-                <a href="#about">Who we are</a>
+                <a href="#about">About us</a>
               </li>
               <li>
                 <a href="#service-group">Services</a>
@@ -39,15 +39,15 @@ function Footer() {
             </ul>
 
             <ul>
-              <span>Talk to us</span>
+              <span>Contact us</span>
               <li>
                 <a href="https://wa.me/14379846443?text=what%20services%20ECleaning%20has">
                   +1 (437) 984-6443
                 </a>
               </li>
               <li>
-                <a href="mailto:jurema.cleaning@gmail.com">
-                  jurema.cleaning@gmail.com
+                <a href="mailto:hello@elmacleaning.com">
+                  hello@elmacleaning.com
                 </a>
               </li>
               <li>
