@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
-import elmaCleaningLogo from "../../public/assets/elma-cleaning-logo.svg";
+import elmaCleaningLogo from "../../public/assets/ec-logo-preview-header.svg";
 import styles from "../styles/components/Header.module.scss";
 import { MyAnchorToLogo } from "./MyAnchorToLogo";
 

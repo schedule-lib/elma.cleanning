@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FiInstagram, FiChevronUp } from "react-icons/fi";
 
-import elmaCleaningLogo from "../../public/assets/ec-logo-preview.svg";
+import elmaCleaningLogo from "../../public/assets/ec-logo-preview-footer.svg";
 import styles from "../styles/components/Footer.module.scss";
 import { MyAnchorToLogo } from "./MyAnchorToLogo";
 
