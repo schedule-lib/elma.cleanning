@@ -49,6 +49,8 @@ body,
   --text-color: #413f3f;
   --link: #4059ce;
   --link-desfoque: #526bda;
+  --hight-text: #ff6b00;
+  --hight-text-light: #da7731;
 
   --animation-sample: simple-animation 0.8s ease forwards;
 

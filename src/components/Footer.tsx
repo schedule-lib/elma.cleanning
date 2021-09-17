@@ -24,7 +24,9 @@ function Footer() {
             <ul>
               <span>Maling Address</span>
               <li>
-                <p>MABELLE AVE TORONTO, ON CA M9A 4Y1</p>
+                <p className={styles.fText}>
+                  MABELLE AVE TORONTO, ON CA M9A 4Y1
+                </p>
               </li>
             </ul>
 

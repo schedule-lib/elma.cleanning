@@ -72,7 +72,7 @@
           font-size: 16px;
           font-weight: 700;
           line-height: 36px;
-          color: #c5c2c2;
+          color: var(--hight-text);
         }
         li {
           display: flex;
@@ -82,10 +82,14 @@
             font-weight: 400;
             line-height: 36px;
             padding: 0;
-            color: #999999;
+            color: var(--hight-text-light);
           }
           p {
             max-width: 187px;
+
+            &.fText {
+              color: var(--hight-text-light);
+            }
           }
         }
       }
